@@ -1,0 +1,12 @@
+import express from "express";
+import { addpropertyController, boughtpropertyController, buypropertyController, deletepropertyController, getallpropertiesController, getpropertyController, updatepropertyController } from "../controllers/propController.js";
+import { requireSignIn } from "../middleware/authmiddleware.js";
+const router = express.Router();
+router.post("/add-property",requireSignIn,addpropertyController);
+router.get("/get-properties",getallpropertiesController);
+router.get("/get-property/:id",getpropertyController);
+router.put("/update-property/:id",requireSignIn,updatepropertyController);
+router.post("/buy-property",buypropertyController);
+router.post("/delete-property",requireSignIn,deletepropertyController);
+router.get("/bought-properties",boughtpropertyController);
+export default router;

@@ -1,0 +1,48 @@
+/* CSS Code */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #bac7d8;
+    color: #000;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar .logoname {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a1b4cc;
+  }
+  .navbar .logoname {
+    font-size: 24px;
+    font-weight: bold;
+    color: #656e7a;
+  }
+  
+  .navbar input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .navbar button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar .menu a {
+    margin-left: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  
